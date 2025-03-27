@@ -14,25 +14,6 @@ Frontend: React, Context API (for state management)
 Styling: CSS  
 Tools: Create React App
 
-## Installation
-Clone the repository:
-```sh
-git clone https://github.com/yourusername/expense-tracker.git
-cd expense-tracker
-Install dependencies:
-
-sh
-Copy
-Edit
-npm install
-Start the development server:
-
-sh
-Copy
-Edit
-npm start
-Project Structure
-
 ## project structure
 php
 Copy
@@ -53,6 +34,34 @@ expense-tracker/
 ├── .gitignore
 ├── package.json
 └── README.md                # This file
+
+## Installation
+Clone the repository:
+sh
+git clone https://github.com/yourusername/expense-tracker.git
+cd expense-tracker
+Install dependencies:
+
+sh
+Copy
+Edit
+npm install
+Start the development server:
+
+sh
+Copy
+Edit
+npm start 
+
+## contributions
+
 Contributing Contributions are welcome! Feel free to fork this repo and submit a pull request with your improvements.
 
-License This project is open-source and available under the MIT License.
+## License 
+
+This project is open-source and available under the MIT License.
+
+
+
+
+
