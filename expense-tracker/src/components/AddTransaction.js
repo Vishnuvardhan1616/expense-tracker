@@ -4,18 +4,20 @@ import { GlobalContext } from "../context/GlobalState";
 function AddTransaction() {
   const [text, setText] = useState("");
   const [amount, setAmount] = useState("");
+  const [date, setDate] = useState("");
 
   const { addTransaction } = useContext(GlobalContext);
 
   const onSubmit = (e) => {
     e.preventDefault();
 
-    if (!text || !amount) return;
+    if (!text || !amount || !date) return;
 
     const newTransaction = {
       id: Math.floor(Math.random() * 1000000), // Generate a random ID
       text,
       amount: parseFloat(amount),
+      date: new Date(date), // Save the date as a Date object
     };
 
     addTransaction(newTransaction);
@@ -23,6 +25,7 @@ function AddTransaction() {
     // Clear inputs
     setText("");
     setAmount("");
+    setDate("");
   };
 
   return (
@@ -47,6 +50,15 @@ function AddTransaction() {
             onChange={(e) => setAmount(e.target.value)}
           />
         </div>
+        <div>
+          <label>Date</label>
+          <input
+            type="date"
+            placeholder="Enter date..."
+            value={date}
+            onChange={(e) => setDate(e.target.value)}
+          />
+        </div>
         <button type="submit">Add Transaction</button>
       </form>
     </div>
@@ -54,4 +66,3 @@ function AddTransaction() {
 }
 
 export default AddTransaction;
-
