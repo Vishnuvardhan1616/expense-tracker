@@ -15,9 +15,7 @@ Styling: CSS
 Tools: Create React App
 
 ## project structure
-php
-Copy
-Edit
+
 expense-tracker/
 ├── public/                  # Public assets (e.g., index.html)
 ├── src/
@@ -36,22 +34,13 @@ expense-tracker/
 └── README.md                # This file
 
 ## Installation
+
 Clone the repository:
-sh
 git clone https://github.com/yourusername/expense-tracker.git
 cd expense-tracker
 Install dependencies:
 
-sh
-Copy
-Edit
-npm install
-Start the development server:
 
-sh
-Copy
-Edit
-npm start 
 
 ## contributions
 
