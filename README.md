@@ -15,7 +15,7 @@ Styling: CSS
 Tools: Create React App
 
 ## project structure
-
+```
 expense-tracker/
 ├── public/                  # Public assets (e.g., index.html)
 ├── src/
@@ -32,15 +32,15 @@ expense-tracker/
 ├── .gitignore
 ├── package.json
 └── README.md                # This file
-
+```
 ## Installation
-
+```
 Clone the repository:
 git clone https://github.com/yourusername/expense-tracker.git
 cd expense-tracker
 Install dependencies:
 
-
+```
 
 ## contributions
 
